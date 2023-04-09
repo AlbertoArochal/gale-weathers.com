@@ -37,7 +37,7 @@ body {
   top: 0;
   width: 100%;
   background-color: #000a65;
-  border: #ffe57a 2px solid;
+  border-bottom: #ffe57a 2px solid;
 }
 .header .header__container {
   width: 100%;
@@ -46,6 +46,13 @@ body {
 }
 .header .header__container .header__logo .header__title {
   font-family: Big Shoulders Display, cursive;
+  padding: 1rem 0;
+}
+.header .header__container .header__logo .header__title span {
+  background-color: #ffe600;
+  border-radius: 100%;
+  color: black;
+  padding: 0.5rem;
 }
 .header .header__container .sections {
   display: flex;
@@ -57,10 +64,32 @@ body {
   background-color: #9999ff;
   font-size: larger;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   border-radius: 1rem;
   border: #ffe57a 2px solid;
   margin-top: 1rem;
+  max-width: 150px;
+  cursor: pointer;
+}
+.header .header__container .sections .sections__item img {
+  width: 3rem;
+  position: relative;
+  z-index: 0;
+  margin-left: 2rem;
+}
+.header .header__container .sections .sections__item a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: Patua One;
+  text-shadow: 2px 2px black;
+  z-index: 1;
+  position: absolute;
+}
+
+.sections :hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=index.css.map */
