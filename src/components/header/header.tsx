@@ -1,3 +1,5 @@
+import tubetv from "../../assets/img/tubetv.png";
+
 export const Header = () => {
     return (
         <header className="header">
@@ -13,6 +15,7 @@ export const Header = () => {
                             <a href="#home" className="sections__link">
                                 Home
                             </a>
+                            <img src={tubetv} alt="tube tv" />
                         </li>
                         <li className="sections__item">
                             <a href="#about" className="sections__link">
