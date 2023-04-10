@@ -18,7 +18,9 @@ body {
 }
 .welcome__container {
     width: 790px;
-    height: 619px;
+    position: relative;
+    top: -8rem;
+    height: fit-content;
     margin-left: 4rem;
     p {
         margin: auto;
@@ -61,27 +63,30 @@ body {
                 background-color: #9999ff;
                 font-size: larger;
                 font-weight: 700;
-                padding: 0rem 1rem;
+                padding: 0rem 0.5rem;
                 border-radius: 1rem;
                 border: #ffe57a 2px solid;
                 margin-top: 1rem;
-                max-width: 150px;
+                min-width: 8rem;
+                min-height: 4.1rem;
                 cursor: pointer;
 
                 img {
-                    width: 3rem;
+                    height: 3rem;
                     position: relative;
                     z-index: 0;
                     margin-left: 2rem;
                 }
                 a {
                     text-decoration: none;
-                    text-align: center;
+                    text-align: left;
                     color: white;
                     font-family: Patua One;
                     text-shadow: 2px 2px black;
                     z-index: 1;
                     position: absolute;
+                    max-width: 2rem;
+                    line-height: 1rem;
                 }
             }
         }
@@ -91,4 +96,23 @@ body {
 .sections :hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+.links__container {
+    margin-left: 4rem;
+    position: relative;
+    top: -9rem;
+    li {
+        list-style: disc;
+        color: rgb(230, 216, 28);
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    a {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #8d0606;
+        text-decoration: underline;
+        list-style: inside;
+    }
 }
