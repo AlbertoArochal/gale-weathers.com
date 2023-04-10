@@ -1,4 +1,6 @@
 import tubetv from "../../assets/img/tubetv.png";
+import camera from "../../assets/img/camera.png";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
@@ -12,9 +14,9 @@ export const Header = () => {
                 <div className="sections__container">
                     <ul className="sections">
                         <li className="sections__item">
-                            <a href="#home" className="sections__link">
+                            <Link to="/" className="sections__link">
                                 Home
-                            </a>
+                            </Link>
                             <img src={tubetv} alt="tube tv" />
                         </li>
                         <li className="sections__item">
@@ -23,9 +25,10 @@ export const Header = () => {
                             </a>
                         </li>
                         <li className="sections__item">
-                            <a href="#interviews" className="sections__link">
+                            <Link to="/books" className="sections__link">
                                 focus on books
-                            </a>
+                            </Link>
+                            <img src={camera} alt="camera" />
                         </li>
                         <li className="sections__item">
                             <a href="#bookclub" className="sections__link">
