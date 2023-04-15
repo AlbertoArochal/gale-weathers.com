@@ -1,5 +1,6 @@
 import tubetv from "../../assets/img/tubetv.png";
 import camera from "../../assets/img/camera.png";
+import micro from "../../assets/img/micro.png";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
@@ -31,9 +32,10 @@ export const Header = () => {
                             <img src={camera} alt="camera" />
                         </li>
                         <li className="sections__item">
-                            <a href="#bookclub" className="sections__link">
+                            <Link to="/interviews" className="sections__link">
                                 interview of the week
-                            </a>
+                            </Link>
+                            <img src={micro} alt="micro" />
                         </li>
                         <li className="sections__item">
                             <a href="#contact" className="sections__link">
